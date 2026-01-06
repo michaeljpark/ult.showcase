@@ -154,3 +154,37 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.embed-section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.iframe-container {
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    /* Limit height to typical image/screen heights to avoid being "too long" */
+    max-height: 70vh; 
+    background: #000;
+    
+    /* Enforce 1:2 aspect ratio */
+    aspect-ratio: 1 / 2;
+    
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.iframe-container iframe {
+    width: 150%;
+    height: 150%;
+    transform: scale(0.6667);
+    transform-origin: top left;
+    border: none;
+    display: block; /* Removes extra space */
+}
