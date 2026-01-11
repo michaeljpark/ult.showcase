@@ -132,6 +132,18 @@ footer {
 .video-section {
     margin-bottom: 80px;
 }
+.video-section h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.video-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
 .video-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
