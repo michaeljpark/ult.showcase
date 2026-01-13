@@ -132,6 +132,15 @@ footer {
 .video-section {
     margin-bottom: 80px;
 }
+.video-section h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+.video-section p {
+    margin: 0 0 40px 0;
+    font-size: 1.1rem;
+}
 .video-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
