@@ -3,6 +3,9 @@
     --text-color: #BABAE6;
     --font-main: "DM Sans", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -204,4 +207,50 @@ footer {
     transform-origin: top left;
     border: none;
     display: block; /* Removes extra space */
+}
+
+/* Side Navigation */
+.side-nav {
+    position: fixed;
+    top: 50%;
+    left: calc((100vw - 1200px) / 4);
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: left;
+    width: max-content;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-nav li {
+    margin-bottom: 25px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 0.65rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.side-nav li.active a,
+.side-nav a:hover {
+    opacity: 1;
+    font-weight: 700;
+}
+
+@media (max-width: 1400px) {
+    .side-nav {
+        display: none;
+    }
 }

@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="side-nav">
+        <ul>
+            <li class="active"><a href="#research">RESEARCH</a></li>
+            <li><a href="#design">DESIGN</a></li>
+            <li><a href="#prototyping">PROTOTYPING</a></li>
+            <li><a href="#design-pilot">DESIGN PILOT</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <header>
             <div class="logo-container">
@@ -39,151 +47,168 @@
             <div class="test-section"></div>
         </section>
 
-        <section class="section intro-text">
+        <!-- Intro -->
+        <div class="section intro-text">
             <h2>ult</h2>
             <p>Physical Urban Logistics Solution</p>
-        </section>
+        </div>
 
-        <section class="section">
-            <img src="problem Framing.png" alt="Problem Framing" class="project-img">
-            <div class="section-title">Problem Framing</div>
-            <div class="section-content">
-                <p>The logistics industry underwent a fundamental transformation as distribution networks transitioned from inefficient point-to-point models toward centralized hub-and-spoke systems. This structural shift enabled companies to consolidate shipments at suburban distribution hubs, reducing operational costs through economies of scale and leveraging affordable suburban land. However, this efficiency optimization inadvertently created a critical bottleneck. By positioning hubs in suburban locations to maximize storage capacity and minimize real estate costs, the industry sacrificed geographic proximity to urban customer concentrations. As packages move from these suburban consolidation points toward dense downtown delivery zones, that final journey now consumes the majority of both delivery time and operational costs. The economic viability of servicing any given area becomes entirely dependent on order volume density. Urban neighborhoods with insufficient delivery volume cannot justify the last-mile costs, while only high-volume districts can economically support dedicated micro-fulfillment centers. This volume threshold problem continues intensifying as e-commerce growth accelerates demand.</p>
+        <!-- RESEARCH SECTION -->
+        <section id="research">
+            <div class="section">
+                <img src="problem Framing.png" alt="Problem Framing" class="project-img">
+                <div class="section-title">Problem Framing</div>
+                <div class="section-content">
+                    <p>The logistics industry underwent a fundamental transformation as distribution networks transitioned from inefficient point-to-point models toward centralized hub-and-spoke systems. This structural shift enabled companies to consolidate shipments at suburban distribution hubs, reducing operational costs through economies of scale and leveraging affordable suburban land. However, this efficiency optimization inadvertently created a critical bottleneck. By positioning hubs in suburban locations to maximize storage capacity and minimize real estate costs, the industry sacrificed geographic proximity to urban customer concentrations. As packages move from these suburban consolidation points toward dense downtown delivery zones, that final journey now consumes the majority of both delivery time and operational costs. The economic viability of servicing any given area becomes entirely dependent on order volume density. Urban neighborhoods with insufficient delivery volume cannot justify the last-mile costs, while only high-volume districts can economically support dedicated micro-fulfillment centers. This volume threshold problem continues intensifying as e-commerce growth accelerates demand.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <img src="Generative Questions.png" alt="Solution Approach" class="project-img">
+                <div class="section-title">Solution Approach - Physical Solution, B2C Logistics</div>
+                <div class="section-content">
+                    <p>The project proposes reconceptualizing the current hub-and-spoke model into a Portable Hub and Vertical Spoke model, making hubs dynamic while simultaneously shifting the delivery paradigm from horizontal to vertical in physical dimensions. This physical solution targets B2C logistics specifically.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <img src="Key Statistics.png" alt="Key Statistics" class="project-img">
+                <div class="section-title">Key Statistics</div>
+                <div class="section-content">
+                    <p>Three key statistics frame the urgency of this problem. Last-mile delivery costs have surged from consuming 41% of total shipping costs in 2018 to 53% in 2023, representing a dramatic shift in the cost structure of logistics operations. The disparity between servicing high-density areas at $10 per package versus low-density areas at $50 per package creates a fivefold cost gap that makes equitable service delivery economically unfeasible. Meanwhile, the environmental impact continues escalating, with urban delivery emissions projected to increase 60% by 2030, adding 11 minutes to daily commutes in major cities as delivery vehicles congest urban arterials.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <img src="Research Question.png" alt="Research Questions" class="project-img">
+                <div class="section-title">Research Questions - Reconceptualizing B2C Logistics</div>
+                <div class="section-content">
+                    <p>The research explores three interconnected approaches to reconceptualizing existing B2C logistics structures, aiming to inject flexibility into the hub-and-spoke model while overcoming spatial constraints inherent to urban delivery. The first approach examines repurposing airship technology as stabilized aerial motherships that deploy drones as the delivery medium, enabling a vertical logistics solution that operates beyond horizontal ground-level constraints entirely. The second approach investigates redefining the delivery endpoint itself, shifting from fixed ground-level locations such as pickup points and doorsteps toward vertical access points like residential windows and balconies. The third approach addresses the challenge of dynamically responding to fluctuating logistics volume in urban environments by expanding operations into the vertical dimension within existing regulatory frameworks, while simultaneously creating a live data hub that enables real-time automated delivery orchestration.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="subsection">
+                    <img src="Business Model.png" alt="Business Model" class="project-img">
+                    <h4>Business Model - B2C</h4>
+                    <p>Through analyzing the hub-and-spoke model, the project identified that the logistics process at the endpoint involves multiple complex factors directly tied to user interaction and perception. This observation led to determining that a B2C solution approach would prove more systemically rational than a B2B accessibility-focused approach, ultimately deciding to develop a B2C-centered solution. The fundamental principle driving this decision recognizes that the core of logistics service quality manifests at the main interaction point where users actively wait for their deliveries. This moment forms where user evaluation and perception crystallize. Users fundamentally require dynamic access to delivery status information throughout the fulfillment process, and by technologically reimagining the physical delivery process itself, the project anticipates achieving substantially higher user satisfaction outcomes.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Stakeholder - Regal Consideration.png" alt="Stakeholder - Transport Canada" class="project-img">
+                    <h4>Stakeholder - Regal Consideration</h4>
+                    <p>Transport Canada exercises regulatory authority over drone operations and all aviation-related aspects of the project. They function in a supervisory capacity, ensuring compliance with safety regulations and legal requirements while maintaining oversight through continuous safety inspections and mandatory reporting protocols throughout all operational phases.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Stakeholder - Potential Logistics Partner.png" alt="Stakeholder - Potential Logistics Partner" class="project-img">
+                    <h4>Stakeholder - Potential Logistics Partner</h4>
+                    <p>Within the logistics domain, the project can engage potential partners who operate directly at the customer endpoint, including CN, Amazon, and Uber. The service architecture currently being designed enables the provision of specific B2C solutions tailored to these prospective partners' operational requirements, particularly addressing their last-mile delivery challenges where traditional horizontal logistics prove most constrained.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Stakeholder - Technical Advisory Partner.png" alt="Stakeholder - SkyX" class="project-img">
+                    <h4>Stakeholder - Technical Advisory Partner - SkyX</h4>
+                    <p>Through establishing partnership with SkyX, the project gains access to leverage their existing drone-based aerial data infrastructure, providing optimized operational data specifically for mothership airship coordination and deployable delivery drone navigation. This infrastructure partnership supplies the essential technical foundation supporting the physical solution's aerial components.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Interaction Logic.png" alt="Endpoint Parcel Reception Logic" class="project-img">
+                    <h4>Endpoint Parcel Reception Logic - Hybrid Parcel Distribution</h4>
+                    <p>The hybrid parcel distribution system operates through two integrated layers working in coordination. The technical embodiment constitutes the physical layer, offering operational flexibility between horizontal step van delivery and vertical aircraft delivery based on situational requirements. The user interaction layer functions as the digital interface, providing recipients with options between balcony receiving and concierge receiving at the delivery endpoint. This dual-layer structure enables the system to dynamically adapt delivery methods in response to building architecture, user preferences, and real-time operational conditions.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section">
-            <img src="Generative Questions.png" alt="Solution Approach" class="project-img">
-            <div class="section-title">Solution Approach - Physical Solution, B2C Logistics</div>
-            <div class="section-content">
-                <p>The project proposes reconceptualizing the current hub-and-spoke model into a Portable Hub and Vertical Spoke model, making hubs dynamic while simultaneously shifting the delivery paradigm from horizontal to vertical in physical dimensions. This physical solution targets B2C logistics specifically.</p>
+        <!-- DESIGN SECTION -->
+        <section id="design">
+            <div class="section">
+                <div class="subsection">
+                    <img src="Physical Layer.png" alt="Physical Layer" class="project-img">
+                    <h4>Physical Layer</h4>
+                    <p>The physical layer encompasses all hardware and infrastructure components that enable the vertical logistics solution to function. This includes coordinating the aerial mothership platform with deployable delivery drones and ground-based vehicles working in synchronized operation.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Physical Layer - Main Components.png" alt="Physical Layer - System Components" class="project-img">
+                    <h4>Physical Layer - System Components</h4>
+                    <p>The physical layer integrates three primary operational components functioning together. The aircraft mothership serves as the mobile aerial hub, maintaining position over designated delivery zones while coordinating all deployment operations. Heavy-lift drones deploy from the mothership platform, transporting packages directly to vertical access points on building facades. Step vans continue providing ground-level delivery support for locations where vertical delivery proves impractical or inefficient. This expansion from the existing step van and local hub-centric horizontal delivery structure toward a hybrid delivery model incorporating vertical logistics diversifies available delivery methods, creating an operational system specifically designed to navigate urban traffic constraints while maintaining delivery efficiency.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Physical Layer - Visualization.png" alt="Vertical Delivery to Endpoint" class="project-img">
+                    <h4>Physical Layer - Vertical Delivery to Endpoint</h4>
+                    <p>The physical solution directly addresses the initial research question about redefining the final delivery endpoint, moving away from ground-level collection points that require recipients to physically travel and collect packages toward direct delivery to balconies or windows. This transformation reduces latent labor requirements on both the recipient and delivery personnel sides while dramatically expanding spatial efficiency throughout the delivery chain.</p>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <div class="video-grid">
+                    <video src="https://res.cloudinary.com/dhesvrckb/video/upload/v1767596323/dronstation10001-0300_1_jnlzmi.mp4" autoplay loop muted playsinline></video>
+                    <video src="https://res.cloudinary.com/dhesvrckb/video/upload/v1767596424/dronstation20001-0300_r67hcq.mp4" autoplay loop muted playsinline></video>
+                    <video src="https://res.cloudinary.com/dhesvrckb/video/upload/v1767596323/dronstation30001-0300_raow1k.mp4" autoplay loop muted playsinline></video>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="subsection">
+                    <img src="Digital Layer.png" alt="Digital Layer" class="project-img">
+                    <h4>Digital Layer</h4>
+                    <p>The digital layer provides the comprehensive user-facing interface and real-time data orchestration systems that connect recipients directly with the physical delivery infrastructure throughout the fulfillment process. This layer manages all tracking functionality, authentication protocols, deployment notifications, and live delivery monitoring through an integrated mobile application platform.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="User Flow.png" alt="User Flow" class="project-img">
+                    <h4>User Flow</h4>
+                    <p>The user flow illustrates the complete recipient journey from account creation to package retrieval. The sequence begins with onboarding and locational configuration, moves through real-time package tracking, and culminates in a secure, interactive delivery handover. This diagram maps the critical touchpoints where digital inputs directly trigger physical logistics actions.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section">
-            <img src="Key Statistics.png" alt="Key Statistics" class="project-img">
-            <div class="section-title">Key Statistics</div>
-            <div class="section-content">
-                <p>Three key statistics frame the urgency of this problem. Last-mile delivery costs have surged from consuming 41% of total shipping costs in 2018 to 53% in 2023, representing a dramatic shift in the cost structure of logistics operations. The disparity between servicing high-density areas at $10 per package versus low-density areas at $50 per package creates a fivefold cost gap that makes equitable service delivery economically unfeasible. Meanwhile, the environmental impact continues escalating, with urban delivery emissions projected to increase 60% by 2030, adding 11 minutes to daily commutes in major cities as delivery vehicles congest urban arterials.</p>
+        <!-- PROTOTYPING SECTION -->
+        <section id="prototyping">
+            <div class="section">
+                <div class="subsection">
+                    <img src="Digital Layer - Dashboard.png" alt="Mobile Application Interface" class="project-img">
+                    <h4>Digital Layer - Mobile Application Interface</h4>
+                    <p>The mobile application initiates with flexible authentication pathways, enabling users to establish sessions through Google or Amazon account integration. The main dashboard presents the user's current registered location alongside their designated deployment configuration, displaying both complete address details and the specific balcony identifier assigned to their unit.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Digital Layer - Tracking.png" alt="Package Tracking Interface" class="project-img">
+                    <h4>Digital Layer - Package Tracking Interface</h4>
+                    <p>The tracking interface delivers comprehensive package journey information, rendering current location data on an interactive map alongside calculated estimated arrival times. Users can examine detailed delivery history, clearly observing each shipment's progression from initial processing through facility departures to final arrival status.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Digital Layer - Recieving.png" alt="Live Delivery Monitoring" class="project-img">
+                    <h4>Digital Layer - Live Delivery Monitoring</h4>
+                    <p>The receiving sequence initiates with a safety verification step, prompting users to confirm their balcony landing zone has been cleared before proceeding. Once connection establishes successfully, users gain access to a live camera feed streaming from the approaching drone, providing a real-time aerial perspective of their balcony as the drone descends.</p>
+                </div>
+
+                <div class="subsection">
+                    <img src="Digital Layer - Authentication.png" alt="Security Verification" class="project-img">
+                    <h4>Digital Layer - Security Verification and Delivery Completion</h4>
+                    <p>The final security verification sequence requires users to authenticate their identity through one of two methods, either scanning the displayed QR code with the drone's onboard camera or entering a mobile authentication code transmitted via both email and SMS channels before the package container unlocks. Following successful identity verification, the delivery process completes and users receive explicit confirmation that the package has been safely released within their designated landing zone and remains ready for immediate physical retrieval. The application then automatically returns users to the main dashboard interface where they can continue tracking additional incoming deliveries or navigate to account settings for preference management.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section">
-            <img src="Research Question.png" alt="Research Questions" class="project-img">
-            <div class="section-title">Research Questions - Reconceptualizing B2C Logistics</div>
-            <div class="section-content">
-                <p>The research explores three interconnected approaches to reconceptualizing existing B2C logistics structures, aiming to inject flexibility into the hub-and-spoke model while overcoming spatial constraints inherent to urban delivery. The first approach examines repurposing airship technology as stabilized aerial motherships that deploy drones as the delivery medium, enabling a vertical logistics solution that operates beyond horizontal ground-level constraints entirely. The second approach investigates redefining the delivery endpoint itself, shifting from fixed ground-level locations such as pickup points and doorsteps toward vertical access points like residential windows and balconies. The third approach addresses the challenge of dynamically responding to fluctuating logistics volume in urban environments by expanding operations into the vertical dimension within existing regulatory frameworks, while simultaneously creating a live data hub that enables real-time automated delivery orchestration.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="subsection">
-                <img src="Business Model.png" alt="Business Model" class="project-img">
-                <h4>Business Model - B2C</h4>
-                <p>Through analyzing the hub-and-spoke model, the project identified that the logistics process at the endpoint involves multiple complex factors directly tied to user interaction and perception. This observation led to determining that a B2C solution approach would prove more systemically rational than a B2B accessibility-focused approach, ultimately deciding to develop a B2C-centered solution. The fundamental principle driving this decision recognizes that the core of logistics service quality manifests at the main interaction point where users actively wait for their deliveries. This moment forms where user evaluation and perception crystallize. Users fundamentally require dynamic access to delivery status information throughout the fulfillment process, and by technologically reimagining the physical delivery process itself, the project anticipates achieving substantially higher user satisfaction outcomes.</p>
+        <!-- DESIGN PILOT SECTION -->
+        <section id="design-pilot">
+            <div class="embed-section">
+                <div class="iframe-container">
+                    <iframe src="https://michaeljpark.github.io/ult/"></iframe>
+                </div>
             </div>
 
-            <div class="subsection">
-                <img src="Stakeholder - Regal Consideration.png" alt="Stakeholder - Transport Canada" class="project-img">
-                <h4>Stakeholder - Regal Consideration</h4>
-                <p>Transport Canada exercises regulatory authority over drone operations and all aviation-related aspects of the project. They function in a supervisory capacity, ensuring compliance with safety regulations and legal requirements while maintaining oversight through continuous safety inspections and mandatory reporting protocols throughout all operational phases.</p>
+            <div class="section">
+                <img src="c1.png" alt="c1" class="project-img">
+                <img src="c2.png" alt="c2" class="project-img">
+                <img src="c3.png" alt="c3" class="project-img">
+                <img src="c4.png" alt="c4" class="project-img">
+                <img src="c5.png" alt="c5" class="project-img">
             </div>
-
-            <div class="subsection">
-                <img src="Stakeholder - Potential Logistics Partner.png" alt="Stakeholder - Potential Logistics Partner" class="project-img">
-                <h4>Stakeholder - Potential Logistics Partner</h4>
-                <p>Within the logistics domain, the project can engage potential partners who operate directly at the customer endpoint, including CN, Amazon, and Uber. The service architecture currently being designed enables the provision of specific B2C solutions tailored to these prospective partners' operational requirements, particularly addressing their last-mile delivery challenges where traditional horizontal logistics prove most constrained.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Stakeholder - Technical Advisory Partner.png" alt="Stakeholder - SkyX" class="project-img">
-                <h4>Stakeholder - Technical Advisory Partner - SkyX</h4>
-                <p>Through establishing partnership with SkyX, the project gains access to leverage their existing drone-based aerial data infrastructure, providing optimized operational data specifically for mothership airship coordination and deployable delivery drone navigation. This infrastructure partnership supplies the essential technical foundation supporting the physical solution's aerial components.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Interaction Logic.png" alt="Endpoint Parcel Reception Logic" class="project-img">
-                <h4>Endpoint Parcel Reception Logic - Hybrid Parcel Distribution</h4>
-                <p>The hybrid parcel distribution system operates through two integrated layers working in coordination. The technical embodiment constitutes the physical layer, offering operational flexibility between horizontal step van delivery and vertical aircraft delivery based on situational requirements. The user interaction layer functions as the digital interface, providing recipients with options between balcony receiving and concierge receiving at the delivery endpoint. This dual-layer structure enables the system to dynamically adapt delivery methods in response to building architecture, user preferences, and real-time operational conditions.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Physical Layer.png" alt="Physical Layer" class="project-img">
-                <h4>Physical Layer</h4>
-                <p>The physical layer encompasses all hardware and infrastructure components that enable the vertical logistics solution to function. This includes coordinating the aerial mothership platform with deployable delivery drones and ground-based vehicles working in synchronized operation.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Physical Layer - Main Components.png" alt="Physical Layer - System Components" class="project-img">
-                <h4>Physical Layer - System Components</h4>
-                <p>The physical layer integrates three primary operational components functioning together. The aircraft mothership serves as the mobile aerial hub, maintaining position over designated delivery zones while coordinating all deployment operations. Heavy-lift drones deploy from the mothership platform, transporting packages directly to vertical access points on building facades. Step vans continue providing ground-level delivery support for locations where vertical delivery proves impractical or inefficient. This expansion from the existing step van and local hub-centric horizontal delivery structure toward a hybrid delivery model incorporating vertical logistics diversifies available delivery methods, creating an operational system specifically designed to navigate urban traffic constraints while maintaining delivery efficiency.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Physical Layer - Visualization.png" alt="Vertical Delivery to Endpoint" class="project-img">
-                <h4>Physical Layer - Vertical Delivery to Endpoint</h4>
-                <p>The physical solution directly addresses the initial research question about redefining the final delivery endpoint, moving away from ground-level collection points that require recipients to physically travel and collect packages toward direct delivery to balconies or windows. This transformation reduces latent labor requirements on both the recipient and delivery personnel sides while dramatically expanding spatial efficiency throughout the delivery chain.</p>
-            </div>
-        </section>
-
-        <section class="video-section">
-            <div class="video-grid">
-                <video src="https://res.cloudinary.com/dhesvrckb/video/upload/v1767596323/dronstation10001-0300_1_jnlzmi.mp4" autoplay loop muted playsinline></video>
-                <video src="https://res.cloudinary.com/dhesvrckb/video/upload/v1767596424/dronstation20001-0300_r67hcq.mp4" autoplay loop muted playsinline></video>
-                <video src="https://res.cloudinary.com/dhesvrckb/video/upload/v1767596323/dronstation30001-0300_raow1k.mp4" autoplay loop muted playsinline></video>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="subsection">
-                <img src="Digital Layer.png" alt="Digital Layer" class="project-img">
-                <h4>Digital Layer</h4>
-                <p>The digital layer provides the comprehensive user-facing interface and real-time data orchestration systems that connect recipients directly with the physical delivery infrastructure throughout the fulfillment process. This layer manages all tracking functionality, authentication protocols, deployment notifications, and live delivery monitoring through an integrated mobile application platform.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="User Flow.png" alt="User Flow" class="project-img">
-                <h4>User Flow</h4>
-                <p>The user flow illustrates the complete recipient journey from account creation to package retrieval. The sequence begins with onboarding and locational configuration, moves through real-time package tracking, and culminates in a secure, interactive delivery handover. This diagram maps the critical touchpoints where digital inputs directly trigger physical logistics actions.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Digital Layer - Dashboard.png" alt="Mobile Application Interface" class="project-img">
-                <h4>Digital Layer - Mobile Application Interface</h4>
-                <p>The mobile application initiates with flexible authentication pathways, enabling users to establish sessions through Google or Amazon account integration. The main dashboard presents the user's current registered location alongside their designated deployment configuration, displaying both complete address details and the specific balcony identifier assigned to their unit.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Digital Layer - Tracking.png" alt="Package Tracking Interface" class="project-img">
-                <h4>Digital Layer - Package Tracking Interface</h4>
-                <p>The tracking interface delivers comprehensive package journey information, rendering current location data on an interactive map alongside calculated estimated arrival times. Users can examine detailed delivery history, clearly observing each shipment's progression from initial processing through facility departures to final arrival status.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Digital Layer - Recieving.png" alt="Live Delivery Monitoring" class="project-img">
-                <h4>Digital Layer - Live Delivery Monitoring</h4>
-                <p>The receiving sequence initiates with a safety verification step, prompting users to confirm their balcony landing zone has been cleared before proceeding. Once connection establishes successfully, users gain access to a live camera feed streaming from the approaching drone, providing a real-time aerial perspective of their balcony as the drone descends.</p>
-            </div>
-
-            <div class="subsection">
-                <img src="Digital Layer - Authentication.png" alt="Security Verification" class="project-img">
-                <h4>Digital Layer - Security Verification and Delivery Completion</h4>
-                <p>The final security verification sequence requires users to authenticate their identity through one of two methods, either scanning the displayed QR code with the drone's onboard camera or entering a mobile authentication code transmitted via both email and SMS channels before the package container unlocks. Following successful identity verification, the delivery process completes and users receive explicit confirmation that the package has been safely released within their designated landing zone and remains ready for immediate physical retrieval. The application then automatically returns users to the main dashboard interface where they can continue tracking additional incoming deliveries or navigate to account settings for preference management.</p>
-            </div>
-        </section>
-
-        <section class="embed-section">
-            <div class="iframe-container">
-                <iframe src="https://michaeljpark.github.io/ult/"></iframe>
-            </div>
-        </section>
-
-        <section class="section">
-            <img src="c1.png" alt="c1" class="project-img">
-            <img src="c2.png" alt="c2" class="project-img">
-            <img src="c3.png" alt="c3" class="project-img">
-            <img src="c4.png" alt="c4" class="project-img">
-            <img src="c5.png" alt="c5" class="project-img">
         </section>
 
         <footer>
