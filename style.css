@@ -5,6 +5,12 @@
 }
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body {
     background-color: var(--bg-color);
@@ -12,8 +18,9 @@ body {
     font-family: var(--font-main);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     line-height: 1.5;
+    overflow-x: hidden;
+    width: 100%;
 }
 .container {
     max-width: 1200px;
@@ -240,48 +247,205 @@ footer {
     display: block; /* Removes extra space */
 }
 
-/* Side Navigation */
-.side-nav {
+/* Navigation Indicator */
+.nav-indicator {
     position: fixed;
-    top: 50%;
-    left: calc((100vw - 1200px) / 4);
-    transform: translate(-50%, -50%);
-    z-index: 1000;
-    text-align: left;
-    width: max-content;
+    z-index: 9999;
+    left: 50%;
+    top: 24px;
+    transform: translateX(-50%);
+    width: auto;
+    text-align: center;
 }
 
-.side-nav ul {
+.nav-list {
+    position: relative;
     list-style: none;
-    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    background: rgba(26, 26, 32, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 100px;
+    border: 1px solid rgba(186, 186, 230, 0.1);
+}
+
+.nav-active-bg {
+    position: absolute;
+    background: var(--text-color);
+    border-radius: 100px;
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0;
+    pointer-events: none;
+    height: 100%; /* Will be set by JS usually, but safety first */
+}
+
+.nav-item {
+    position: relative;
+    z-index: 2;
     margin: 0;
 }
 
-.side-nav li {
-    margin-bottom: 25px;
-}
-
-.side-nav a {
-    text-decoration: none;
-    color: var(--text-color);
+.nav-item a {
     font-family: var(--font-main);
-    font-size: 0.65rem;
     font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    opacity: 0.4;
-    transition: all 0.3s ease;
-    display: block;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    opacity: 0.6;
 }
 
-.side-nav li.active a,
-.side-nav a:hover {
+.nav-item a:hover {
     opacity: 1;
+}
+
+.nav-item.active a {
+    color: var(--bg-color);
     font-weight: 700;
+    opacity: 1;
 }
 
 @media (max-width: 1400px) {
-    .side-nav {
-        display: none;
+    /* Retain visibility on smaller screens but maybe scale down or stack? */
+    /* The previous code hid side-nav on 1400px. We want this top nav to be visible. */
+}
+
+
+/* View Report Button - Base Styles (Desktop) */
+.view-report-btn {
+    position: fixed;
+    top: 32px;
+    right: 50px;
+    z-index: 10000;
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+}
+
+.view-report-btn:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    .nav-indicator {
+        left: auto;
+        right: 20px;
+        top: 20px;
+        transform: none;
+        text-align: right;
+        width: auto;
+        max-width: 100vw;
     }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background: transparent !important;
+        backdrop-filter: none !important;
+        border: none !important;
+        padding: 0;
+        gap: 0;
+    }
+
+    .nav-active-bg {
+        display: none; 
+    }
+
+    .nav-item a {
+        color: var(--text-color);
+        opacity: 0.5;
+        padding: 4px 0; /* Adjust padding for stack */
+        justify-content: flex-end; /* Align text right */
+    }
+
+    .nav-item.active a {
+        color: var(--text-color);
+        opacity: 1;
+    }
+    
+    .view-report-btn {
+        top: auto;
+        right: auto;
+        bottom: 24px;
+        left: 24px;
+        background: rgba(26, 26, 32, 0.9);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        border-radius: 100px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 0.75rem;
+        border: 1px solid rgba(186, 186, 230, 0.1);
+    }
+}
+
+
+/* Report Modal */
+.report-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 20000;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Click anywhere to close */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.report-modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.report-content {
+    max-width: 95%;
+    max-height: 95vh;
+    overflow: auto;
+    position: relative;
+    cursor: default; /* Prevent click bubbling from image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-content img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    /* Styles now handled in the 1000px query to cover all mobile/tablet */
 }

@@ -10,16 +10,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="side-nav">
-        <ul>
-            <li class="active"><a href="#research">RESEARCH</a></li>
-            <li><a href="#design">DESIGN</a></li>
-            <li><a href="#prototyping">PROTOTYPING</a></li>
-            <li><a href="#design-pilot">DESIGN PILOT</a></li>
-            <li><a href="#feedback">FEEDBACK</a></li>
-            <li><a href="#future">FUTURE<br>DEVELOPMENTS</a></li>
+    <div class="nav-indicator">
+        <ul class="nav-list">
+            <div class="nav-active-bg"></div>
+            <li class="nav-item"><a href="#research">RESEARCH</a></li>
+            <li class="nav-item"><a href="#design">DESIGN</a></li>
+            <li class="nav-item"><a href="#prototyping">PROTOTYPING</a></li>
+            <li class="nav-item"><a href="#design-pilot">DESIGN PILOT</a></li>
+            <li class="nav-item"><a href="#feedback">FEEDBACK</a></li>
+            <li class="nav-item"><a href="#future">FUTURE DEVELOPMENTS</a></li>
         </ul>
-    </nav>
+    </div>
+
+    <!-- View Report Button -->
+    <div id="view-report-trigger" class="view-report-btn">VIEW REPORT</div>
+
     <div class="container">
         <header>
             <div class="logo-container">
@@ -271,6 +276,11 @@
         <footer>
             &copy; 2026 Michael Joongmin Park
         </footer>
+    </div>
+    <div id="report-modal" class="report-modal">
+        <div class="report-content">
+            <img src="ultreport.png" alt="Full Report">
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
