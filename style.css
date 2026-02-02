@@ -99,7 +99,7 @@ header {
 }
 .section-content {
     font-size: 1.1rem;
-    max-width: 800px;
+    max-width: 100%;
     margin-bottom: 30px;
 }
 .project-img {
@@ -119,7 +119,7 @@ header {
 }
 .subsection p {
     font-size: 1.1rem;
-    max-width: 800px;
+    max-width: 100%;
     margin-bottom: 30px;
     opacity: 0.9;
 }
